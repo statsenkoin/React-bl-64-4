@@ -1,10 +1,10 @@
-import React, { setState } from 'react';
+import React, { useState } from 'react';
 
 import { FiSearch } from 'react-icons/fi';
 import { FormBtn, InputSearch, SearchFormStyled } from './SearchForm.styled';
 
 export function SearchForm({ onSubmit }) {
-  const [query, setQuery] = setState('');
+  const [query, setQuery] = useState('');
 
   const handleInput = e => {
     setQuery(e.currentTarget.value);
